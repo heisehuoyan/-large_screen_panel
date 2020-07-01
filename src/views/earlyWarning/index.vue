@@ -56,7 +56,7 @@ export default {
   },
   mounted() {
     this.getProfessionWarn();
-    // this.getRealTimeTrend();
+    this.getRealTimeTrend();
     // this.getEmergencyHook();
     // this.getTotalOverview();
     // this.getDirectiveFlux();
