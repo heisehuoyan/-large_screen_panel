@@ -2,9 +2,10 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const Mock = require("mockjs");
-
+var config = require("./config");
 const app = express();
 const port = 5052;
+//process.env.PORT || config.dev.port;
 const apiPath = path.join(__dirname, "./api.json");
 let apiData = {};
 
@@ -50,7 +51,6 @@ app.use((req, res, next) => {
       break;
     }
   }
-
   //返回数据
   data !== undefined ? res.send(data) : res.sendStatus(404);
   next();
