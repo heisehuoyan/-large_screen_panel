@@ -57,10 +57,10 @@ export default {
   mounted() {
     this.getProfessionWarn();
     this.getRealTimeTrend();
-    // this.getEmergencyHook();
-    // this.getTotalOverview();
-    // this.getDirectiveFlux();
-    // this.getTypeDistribution();
+    this.getEmergencyHook();
+    this.getTotalOverview();
+    this.getDirectiveFlux();
+    this.getTypeDistribution();
     var _this = this;
     // setInterval(function() {
     //   _this.getProfessionWarn();
